@@ -5,5 +5,11 @@
     "pg": "^8.12.0",
     "sequelize": "^6.37.3",
     "sequelize-cli": "^6.6.2"
-  }
+  },
+
+"scripts": {
+  "db:create:dev": "npx sequelize db:create --env development",
+  "db:create:test": "npx sequelize db:create --env test",
+  "db:create:prod": "npx sequelize db:create --env production"
+}
 }
